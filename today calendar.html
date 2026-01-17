@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>today calendar</title>
+</head>
+<body>
+    <div id="mycalendardisplay"></div>
+    <script>
+            var today = new Date ();
+            var date = today.getDate();
+            var day = today.getDay();
+            var month = today.getMonth() + 1; 
+            var year = today.getFullYear();
+            document.getElementById("mycalendardisplay").innerHTML = date + "/" + month + "/" + year + "/" + day;
+    </script>
+</body>
+</html>
